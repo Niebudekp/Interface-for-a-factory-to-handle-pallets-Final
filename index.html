@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interfejs użytkownika</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loadingScreen">
+      <div id="loadingContent">
+        <h1>Włączenie Maszyny!</h1>
+        <p>Strona jest obecnie ładowana. Proszę czekać...</p>
+        <p>Autor: Paweł Niebudek</p>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="left-panel">
+        <div class="control-panel">
+          <h2>Parametry</h2>
+          <button id="startBtn" class="control-button">Uruchom ruch</button>
+          <button id="stopBtn" class="control-button">Zatrzymaj ruch</button>
+          <button id="toggleMsgBtn" class="control-button">
+            Pokaż komunikaty
+          </button>
+          <button id="manualMoveLeftBtn" class="control-button">
+            Ręczne przesunięcie w lewo
+          </button>
+          <button id="manualMoveRightBtn" class="control-button">
+            Ręczne przesunięcie w prawo
+          </button>
+        </div>
+        <div class="display-panel">
+          <h2>Wyświetlacz</h2>
+          <p>Stan systemu:</p>
+          <p><span id="systemStatus">Oczekuje na działanie...</span></p>
+        </div>
+      </div>
+      <div class="pallet-container">
+        <div id="pallet1" class="pallet">1</div>
+        <div id="pallet2" class="pallet">2</div>
+        <div id="pallet3" class="pallet">3</div>
+        <div id="pallet4" class="pallet">4</div>
+        <div id="pallet5" class="pallet">5</div>
+        <div id="pallet6" class="pallet">6</div>
+        <div id="pallet7" class="pallet">7</div>
+        <div id="pallet8" class="pallet">8</div>
+        <div id="pallet9" class="pallet">9</div>
+        <div id="pallet10" class="pallet">10</div>
+        <div id="pallet11" class="pallet">11</div>
+        <div id="pallet12" class="pallet">12</div>
+      </div>
+    </div>
+    <div id="messages" class="popup hidden">
+      <div class="popup-content">
+        <span class="close" onclick="toggleMessages()">&times;</span>
+        <h2>Komunikaty:</h2>
+        <ul id="messagesList"></ul>
+      </div>
+    </div>
+    <footer>
+      <p>Autor: Paweł Niebudek</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
